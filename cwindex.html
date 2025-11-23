@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CartoonWisdom</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Bungee&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h1>CartoonWisdom ✨</h1>
+
+    <label for="cartoonSelect">Select Your Favorite Cartoon Character</label>
+    <select id="cartoonSelect" onchange="displayCartoonWisdom()">
+        <option value="" disabled selected>-- Choose a Character --</option>
+        <option value="doraemon">Doraemon</option>
+        <option value="shinchan">Shinchan</option>
+        <option value="chhotabheem">Chhota Bheem</option>
+        <option value="motupatlu">Motu Patlu</option>
+        <option value="bandbudh">Bandbudh Aur Budbak</option>
+        <option value="pokemon">Pokémon</option>
+    </select>
+
+    <div id="outputContainer">
+        <p id="quoteOutput" class="quote"></p>
+        <div id="videoContainer"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
